@@ -1,15 +1,13 @@
-
 <?php
-error_reporting(0);
-try {
+$db_host = "localhost";
+$db_user = "root";
+$db_pass = "root";
+$db_name = "cypwn_vulnourblog";
 
-  $db= new PDO("mysql:host=localhost;dbname=cypwn_vulnourblog;charset=utf8;", "root","");
-  $db->query("SET CHARACTER SET UTF8");
-  $db->query("SET NAMES UTF8");
-
-} catch (PDOException $hata) {
-
-  print  $hata->getMessage ();
-
+try{
+  $db= new PDO("mysql:host=$db_host;dbname=$db_name","$db_user","$db_pass");
+}
+catch (PDOexception $e){
+  print $e->getMessage();
 }
 ?>
