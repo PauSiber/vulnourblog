@@ -4,10 +4,10 @@
 
   ** NOT-2: Bu anlatımda Ubuntu işletim sistemi kullanılmıştır. Sizin kullandığınız işletim sistemi farklıysa veya local sunucunuz farklı bir yerde çalışıyorsa lütfen kurulum adımlarını ona göre uygulayınız. **
 
-  İlk önce dosyalarımızı yerel sunucumuza çekelim.
+  İlk önce dosyalarımızı yerel sunucumuza çekelim. (git clone işleminde hata alırsanız başına sudo yazarak tekrar deneyiniz.)
 
       cd /var/www/html
-      sudo git clone https://github.com/PauSiber/vulnourblog.git
+      git clone https://github.com/PauSiber/vulnourblog.git
 
   Şimdi veritabanımızı phpMyAdmin üzerinden yükleyelim.
 
